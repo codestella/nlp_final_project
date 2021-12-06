@@ -1,0 +1,69 @@
+rene
+./result/base_tanh_linear_0.0001_p0.1
+Some weights of the model checkpoint at klue/roberta-base were not used when initializing RobertaModel: ['lm_head.layer_norm.bias', 'lm_head.bias', 'lm_head.decoder.bias', 'lm_head.dense.bias', 'lm_head.dense.weight', 'lm_head.decoder.weight', 'lm_head.layer_norm.weight']
+- This IS expected if you are initializing RobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of RobertaModel were not initialized from the model checkpoint at klue/roberta-base and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Parameters of encoder are fixed!
+[Epoch 0] Train loss: 0.044, acc: 0.52, time: 31.0s
+[Epoch 0] Valid loss: 0.044, acc: 0.50
+[Epoch 1] Train loss: 0.044, acc: 0.51, time: 29.5s
+[Epoch 1] Valid loss: 0.043, acc: 0.53
+[Epoch 2] Train loss: 0.044, acc: 0.53, time: 29.6s
+[Epoch 2] Valid loss: 0.043, acc: 0.53
+[Epoch 3] Train loss: 0.043, acc: 0.54, time: 31.1s
+[Epoch 3] Valid loss: 0.044, acc: 0.50
+[Epoch 4] Train loss: 0.043, acc: 0.53, time: 32.0s
+[Epoch 4] Valid loss: 0.043, acc: 0.57
+[Epoch 5] Train loss: 0.043, acc: 0.54, time: 30.4s
+[Epoch 5] Valid loss: 0.043, acc: 0.57
+[Epoch 6] Train loss: 0.043, acc: 0.54, time: 33.1s
+[Epoch 6] Valid loss: 0.043, acc: 0.54
+[Epoch 7] Train loss: 0.043, acc: 0.54, time: 33.2s
+[Epoch 7] Valid loss: 0.044, acc: 0.48
+[Epoch 8] Train loss: 0.043, acc: 0.55, time: 33.4s
+[Epoch 8] Valid loss: 0.044, acc: 0.49
+[Epoch 9] Train loss: 0.043, acc: 0.55, time: 33.4s
+[Epoch 9] Valid loss: 0.043, acc: 0.55
+[Epoch 10] Train loss: 0.043, acc: 0.57, time: 33.6s
+[Epoch 10] Valid loss: 0.045, acc: 0.47
+[Epoch 11] Train loss: 0.043, acc: 0.56, time: 33.8s
+[Epoch 11] Valid loss: 0.043, acc: 0.53
+[Epoch 12] Train loss: 0.043, acc: 0.57, time: 33.8s
+[Epoch 12] Valid loss: 0.044, acc: 0.54
+[Epoch 13] Train loss: 0.043, acc: 0.56, time: 33.8s
+[Epoch 13] Valid loss: 0.044, acc: 0.49
+[Epoch 14] Train loss: 0.043, acc: 0.54, time: 33.8s
+[Epoch 14] Valid loss: 0.043, acc: 0.52
+[Epoch 15] Train loss: 0.043, acc: 0.56, time: 33.8s
+[Epoch 15] Valid loss: 0.043, acc: 0.54
+[Epoch 16] Train loss: 0.043, acc: 0.56, time: 33.8s
+[Epoch 16] Valid loss: 0.045, acc: 0.48
+[Epoch 17] Train loss: 0.043, acc: 0.58, time: 33.8s
+[Epoch 17] Valid loss: 0.043, acc: 0.55
+[Epoch 18] Train loss: 0.043, acc: 0.57, time: 33.8s
+[Epoch 18] Valid loss: 0.043, acc: 0.54
+[Epoch 19] Train loss: 0.043, acc: 0.57, time: 33.8s
+[Epoch 19] Valid loss: 0.043, acc: 0.56
+[Epoch 20] Train loss: 0.043, acc: 0.57, time: 33.8s
+[Epoch 20] Valid loss: 0.043, acc: 0.55
+[Epoch 21] Train loss: 0.043, acc: 0.57, time: 33.7s
+[Epoch 21] Valid loss: 0.043, acc: 0.57
+[Epoch 22] Train loss: 0.043, acc: 0.57, time: 33.8s
+[Epoch 22] Valid loss: 0.043, acc: 0.53
+[Epoch 23] Train loss: 0.042, acc: 0.59, time: 33.8s
+[Epoch 23] Valid loss: 0.043, acc: 0.53
+[Epoch 24] Train loss: 0.042, acc: 0.58, time: 33.8s
+[Epoch 24] Valid loss: 0.043, acc: 0.55
+[Epoch 25] Train loss: 0.042, acc: 0.58, time: 33.8s
+[Epoch 25] Valid loss: 0.044, acc: 0.49
+[Epoch 26] Train loss: 0.042, acc: 0.58, time: 33.8s
+[Epoch 26] Valid loss: 0.043, acc: 0.52
+[Epoch 27] Train loss: 0.042, acc: 0.58, time: 33.8s
+[Epoch 27] Valid loss: 0.043, acc: 0.53
+[Epoch 28] Train loss: 0.042, acc: 0.59, time: 33.8s
+[Epoch 28] Valid loss: 0.043, acc: 0.52
+[Epoch 29] Train loss: 0.042, acc: 0.59, time: 33.8s
+[Epoch 29] Valid loss: 0.043, acc: 0.53
+hostname : rene, partition : titan, script : ~/anaconda3/envs/10/bin/python -u main.py  --tune linear --size base --lr 0.0001

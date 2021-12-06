@@ -1,0 +1,68 @@
+violin
+./result/base_tanh_full_8e-06_p0.1
+Some weights of the model checkpoint at klue/roberta-base were not used when initializing RobertaModel: ['lm_head.decoder.bias', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight', 'lm_head.layer_norm.weight', 'lm_head.bias', 'lm_head.dense.weight', 'lm_head.dense.bias']
+- This IS expected if you are initializing RobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of RobertaModel were not initialized from the model checkpoint at klue/roberta-base and are newly initialized: ['roberta.pooler.dense.weight', 'roberta.pooler.dense.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[Epoch 0] Train loss: 0.044, acc: 0.50, time: 82.5s
+[Epoch 0] Valid loss: 0.044, acc: 0.47
+[Epoch 1] Train loss: 0.043, acc: 0.54, time: 82.2s
+[Epoch 1] Valid loss: 0.036, acc: 0.72
+[Epoch 2] Train loss: 0.032, acc: 0.76, time: 82.2s
+[Epoch 2] Valid loss: 0.030, acc: 0.78
+[Epoch 3] Train loss: 0.019, acc: 0.88, time: 82.0s
+[Epoch 3] Valid loss: 0.039, acc: 0.77
+[Epoch 4] Train loss: 0.011, acc: 0.94, time: 83.9s
+[Epoch 4] Valid loss: 0.043, acc: 0.77
+[Epoch 5] Train loss: 0.006, acc: 0.96, time: 84.0s
+[Epoch 5] Valid loss: 0.049, acc: 0.78
+[Epoch 6] Train loss: 0.004, acc: 0.98, time: 83.7s
+[Epoch 6] Valid loss: 0.054, acc: 0.78
+[Epoch 7] Train loss: 0.003, acc: 0.99, time: 84.0s
+[Epoch 7] Valid loss: 0.057, acc: 0.77
+[Epoch 8] Train loss: 0.002, acc: 0.99, time: 84.1s
+[Epoch 8] Valid loss: 0.074, acc: 0.77
+[Epoch 9] Train loss: 0.002, acc: 0.99, time: 84.1s
+[Epoch 9] Valid loss: 0.067, acc: 0.79
+[Epoch 10] Train loss: 0.001, acc: 0.99, time: 83.7s
+[Epoch 10] Valid loss: 0.072, acc: 0.76
+[Epoch 11] Train loss: 0.001, acc: 0.99, time: 84.1s
+[Epoch 11] Valid loss: 0.063, acc: 0.79
+[Epoch 12] Train loss: 0.001, acc: 1.00, time: 84.0s
+[Epoch 12] Valid loss: 0.076, acc: 0.78
+[Epoch 13] Train loss: 0.001, acc: 1.00, time: 84.2s
+[Epoch 13] Valid loss: 0.076, acc: 0.78
+[Epoch 14] Train loss: 0.001, acc: 1.00, time: 84.2s
+[Epoch 14] Valid loss: 0.076, acc: 0.77
+[Epoch 15] Train loss: 0.001, acc: 0.99, time: 84.2s
+[Epoch 15] Valid loss: 0.070, acc: 0.79
+[Epoch 16] Train loss: 0.001, acc: 1.00, time: 84.0s
+[Epoch 16] Valid loss: 0.069, acc: 0.79
+[Epoch 17] Train loss: 0.001, acc: 1.00, time: 83.8s
+[Epoch 17] Valid loss: 0.073, acc: 0.80
+[Epoch 18] Train loss: 0.001, acc: 1.00, time: 82.8s
+[Epoch 18] Valid loss: 0.075, acc: 0.77
+[Epoch 19] Train loss: 0.000, acc: 1.00, time: 83.1s
+[Epoch 19] Valid loss: 0.075, acc: 0.78
+[Epoch 20] Train loss: 0.000, acc: 1.00, time: 83.2s
+[Epoch 20] Valid loss: 0.079, acc: 0.79
+[Epoch 21] Train loss: 0.000, acc: 1.00, time: 83.6s
+[Epoch 21] Valid loss: 0.086, acc: 0.78
+[Epoch 22] Train loss: 0.000, acc: 1.00, time: 83.4s
+[Epoch 22] Valid loss: 0.085, acc: 0.77
+[Epoch 23] Train loss: 0.000, acc: 1.00, time: 83.4s
+[Epoch 23] Valid loss: 0.085, acc: 0.78
+[Epoch 24] Train loss: 0.000, acc: 1.00, time: 83.3s
+[Epoch 24] Valid loss: 0.087, acc: 0.78
+[Epoch 25] Train loss: 0.000, acc: 1.00, time: 83.6s
+[Epoch 25] Valid loss: 0.089, acc: 0.78
+[Epoch 26] Train loss: 0.000, acc: 1.00, time: 83.8s
+[Epoch 26] Valid loss: 0.086, acc: 0.78
+[Epoch 27] Train loss: 0.000, acc: 1.00, time: 83.7s
+[Epoch 27] Valid loss: 0.088, acc: 0.78
+[Epoch 28] Train loss: 0.000, acc: 1.00, time: 83.0s
+[Epoch 28] Valid loss: 0.089, acc: 0.77
+[Epoch 29] Train loss: 0.000, acc: 1.00, time: 82.9s
+[Epoch 29] Valid loss: 0.088, acc: 0.78
+hostname : violin, partition : titan, script : ~/anaconda3/envs/10/bin/python -u main.py  --size base --lr 8e-06

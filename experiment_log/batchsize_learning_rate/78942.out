@@ -1,0 +1,30 @@
+maxwell
+./result/large_5e-06_b60
+Some weights of the model checkpoint at klue/roberta-large were not used when initializing RobertaModel: ['lm_head.bias', 'lm_head.layer_norm.weight', 'lm_head.dense.bias', 'lm_head.layer_norm.bias', 'lm_head.decoder.bias', 'lm_head.decoder.weight', 'lm_head.dense.weight']
+- This IS expected if you are initializing RobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of RobertaModel were not initialized from the model checkpoint at klue/roberta-large and are newly initialized: ['roberta.pooler.dense.weight', 'roberta.pooler.dense.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/janghyun/anaconda3/envs/10/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:129: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+[Epoch 0] Train loss: 0.139, acc: 50.61, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 0] Valid loss: 0.138, acc: 56.71
+[Epoch 1] Train loss: 0.135, acc: 57.84, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 1] Valid loss: 0.126, acc: 66.29
+[Epoch 2] Train loss: 0.101, acc: 74.92, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 2] Valid loss: 0.106, acc: 73.71
+[Epoch 3] Train loss: 0.062, acc: 87.29, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 3] Valid loss: 0.089, acc: 80.86
+[Epoch 4] Train loss: 0.039, acc: 92.93, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 4] Valid loss: 0.097, acc: 81.86
+[Epoch 5] Train loss: 0.022, acc: 96.51, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 5] Valid loss: 0.125, acc: 81.57
+[Epoch 6] Train loss: 0.013, acc: 98.28, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 6] Valid loss: 0.140, acc: 82.43
+[Epoch 7] Train loss: 0.010, acc: 98.69, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 7] Valid loss: 0.156, acc: 82.29
+[Epoch 8] Train loss: 0.007, acc: 99.21, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 8] Valid loss: 0.158, acc: 82.29
+[Epoch 9] Train loss: 0.006, acc: 99.32, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 9] Valid loss: 0.164, acc: 81.71
+hostname : maxwell, partition : titan, script : ~/anaconda3/envs/10/bin/python -u main.py  --size large --lr 5e-06 --batch_size 60

@@ -1,0 +1,28 @@
+leonhard
+./result/large_1e-05_b5
+Some weights of the model checkpoint at klue/roberta-large were not used when initializing RobertaModel: ['lm_head.decoder.bias', 'lm_head.dense.weight', 'lm_head.dense.bias', 'lm_head.decoder.weight', 'lm_head.layer_norm.weight', 'lm_head.bias', 'lm_head.layer_norm.bias']
+- This IS expected if you are initializing RobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of RobertaModel were not initialized from the model checkpoint at klue/roberta-large and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+[Epoch 0] Train loss: 0.136, acc: 55.55, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 0] Valid loss: 0.109, acc: 72.57
+[Epoch 1] Train loss: 0.086, acc: 80.27, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 1] Valid loss: 0.089, acc: 80.86
+[Epoch 2] Train loss: 0.040, acc: 92.61, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 2] Valid loss: 0.082, acc: 83.71
+[Epoch 3] Train loss: 0.016, acc: 97.44, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 3] Valid loss: 0.123, acc: 85.86
+[Epoch 4] Train loss: 0.009, acc: 98.61, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 4] Valid loss: 0.115, acc: 86.57
+[Epoch 5] Train loss: 0.004, acc: 99.43, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 5] Valid loss: 0.152, acc: 86.14
+[Epoch 6] Train loss: 0.002, acc: 99.73, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 6] Valid loss: 0.191, acc: 84.86
+[Epoch 7] Train loss: 0.001, acc: 99.75, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 7] Valid loss: 0.174, acc: 85.71
+[Epoch 8] Train loss: 0.002, acc: 99.89, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 8] Valid loss: 0.182, acc: 85.86
+[Epoch 9] Train loss: 0.000, acc: 99.95, lr: {optimizer.param_groups[0]['lr']:.6f} time: {time.time()-s:.1f}s
+[Epoch 9] Valid loss: 0.185, acc: 86.00
+hostname : leonhard, partition : titan, script : ~/anaconda3/envs/10/bin/python -u main.py  --size large --lr 1e-05 --batch_size 5
